@@ -39,7 +39,7 @@ export const Home = () => {
   });
 
   const PROJECTS_VISIBLE_COUNT = 6;
-  const words = ["Er Himanshhu Tiwari", "A Web Developer"];
+  const words = ["Himanshhu Tiwari", "A Web Developer"];
   const colors = ["text-orange-400", "text-amber-300"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
