@@ -3,14 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "node server.js",
-    "dev:client": "vite",
-    "build": "vite build --outDir dist/client && vite build --ssr src/entry-server.jsx --outDir dist/server",
-    "lint": "eslint .",
-    "preview": "npm run serve",
-    "serve": "NODE_ENV=production node server.js"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@mdi/js": "^7.4.47",
     "@mdi/react": "^1.6.1",
