@@ -12,11 +12,22 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL || '*',
-  })
-);
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://himanshhutiwari.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
