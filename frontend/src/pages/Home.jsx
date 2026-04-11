@@ -120,14 +120,14 @@ export const Home = () => {
   ];
   const education = [
     {
-      title: "Full Stack Development",
-      subtitle: "Hands-on practical learning",
-      detail: "Focused on building modern web apps with frontend, backend, database, and deployment workflows.",
+      title: "Master of Technology",
+      subtitle: "CSE",
+      detail: "Pursuing Master of Technology in CSE from M.D.U, Rohtak, 2025-2027",
     },
     {
-      title: "Continuous Skill Growth",
-      subtitle: "Project-based experience",
-      detail: "Improving through real client work, responsive UI development, and performance-focused implementation.",
+      title: "Bachelor of Technology",
+      subtitle: "CSE",
+      detail: "I have completed B.Tech in CSE From M.D.U in 2025 with 69%",
     },
   ];
 const skillstwo = [
