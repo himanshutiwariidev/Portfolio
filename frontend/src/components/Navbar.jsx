@@ -18,9 +18,9 @@ export const Navbar = () => {
           <li className="cursor-pointer transition hover:text-orange-400">About</li>
           <li className="cursor-pointer transition hover:text-orange-400">Services</li>
           <li className="cursor-pointer transition hover:text-orange-400">Projects</li>
-          <Link to="/blog"><li className="cursor-pointer transition hover:text-orange-400">Blog</li></Link>
-          <Link to="/admin/login"><li className="cursor-pointer transition hover:text-orange-400">Admin</li></Link>
-          <li className="cursor-pointer transition hover:text-orange-400">Contact</li>
+          <Link to="/blog"><li className="cursor-pointer transition hover:text-orange-400">Blogs</li></Link>
+{/*           <Link to="/admin/login"><li className="cursor-pointer transition hover:text-orange-400">Admin</li></Link>
+ */}          <li className="cursor-pointer transition hover:text-orange-400">Contact</li>
         </ul>
 
         <div className="text-orange-300 md:hidden">
@@ -33,9 +33,9 @@ export const Navbar = () => {
       <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="flex flex-col items-center gap-4 border-t border-orange-500/20 bg-neutral-950 py-4 text-orange-100 shadow-lg shadow-orange-950/50">
           <Link to="/"><li className="cursor-pointer transition hover:text-orange-400">Home</li></Link>
-          <Link to="/blog"><li className="cursor-pointer transition hover:text-orange-400">Blog</li></Link>
-          <Link to="/admin/login"><li className="cursor-pointer transition hover:text-orange-400">Admin</li></Link>
-          <li className="cursor-pointer transition hover:text-orange-400">About</li>
+          <Link to="/blog"><li className="cursor-pointer transition hover:text-orange-400">Blogs</li></Link>
+{/*           <Link to="/admin/login"><li className="cursor-pointer transition hover:text-orange-400">Admin</li></Link>
+ */}          <li className="cursor-pointer transition hover:text-orange-400">About</li>
           <li className="cursor-pointer transition hover:text-orange-400">Services</li>
           <li className="cursor-pointer transition hover:text-orange-400">Projects</li>
           <li className="cursor-pointer transition hover:text-orange-400">Contact</li>
