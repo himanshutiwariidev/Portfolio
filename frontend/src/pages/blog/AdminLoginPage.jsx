@@ -69,7 +69,7 @@ export const AdminLoginPage = () => {
                   adminId: event.target.value,
                 }))
               }
-              placeholder="Enter ADMIN_ID from Backend/.env"
+              placeholder="ADMIN_ID"
               className="w-full rounded-2xl border border-orange-500/20 bg-neutral-950/80 px-4 py-3 text-white outline-none transition focus:border-orange-400"
               required
             />
@@ -87,7 +87,7 @@ export const AdminLoginPage = () => {
                   password: event.target.value,
                 }))
               }
-              placeholder="Enter ADMIN_PASSWORD from Backend/.env"
+              placeholder="ADMIN_PASSWORD"
               className="w-full rounded-2xl border border-orange-500/20 bg-neutral-950/80 px-4 py-3 text-white outline-none transition focus:border-orange-400"
               required
             />
